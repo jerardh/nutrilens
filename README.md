@@ -1,6 +1,6 @@
 # calorie_tracker
 
-A new Flutter project.
+Aims at identification of captured food item and display  it's calorie information
 
 ## Getting Started
 
