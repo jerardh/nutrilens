@@ -1,8 +1,9 @@
+import 'package:calorie_tracker/imagepicker.dart';
 import 'package:flutter/widgets.dart';
 
 class Home extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
+  State<Home> createState() {
     return HomeState();
   }
 }
@@ -10,6 +11,6 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("Home Page"));
+    return Column(children: [Text("Welcome"), ImagePick()]);
   }
 }

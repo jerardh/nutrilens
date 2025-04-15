@@ -11,12 +11,21 @@ class ImagePick extends StatefulWidget {
 }
 
 class ImagePickState extends State<ImagePick> {
-  File? _imageFile;
+  Image _img = Image.asset("assets/images/bir.png", width: 200, height: 200);
   String _hasImage = "False";
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        onPressed: () => {getImage()}, child: Text(_hasImage));
+    return (Column(
+      children: [
+        ElevatedButton(
+            onPressed: () => {getImage()},
+            child: Text(_hasImage),
+            style: ElevatedButton.styleFrom(
+              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            )),
+        _img
+      ],
+    ));
   }
 
   void getImage() async {
@@ -24,8 +33,8 @@ class ImagePickState extends State<ImagePick> {
     XFile? image = await imagePicker.pickImage(source: ImageSource.camera);
     if (image != null) {
       setState(() {
-        _imageFile =
-            File(image.path); //creating File Object using path in XFile;
+        _img = Image.file(File(image
+            .path)); //creating Image Object using path in XFile;Xfile-->File-->Image
         _hasImage = "True";
       });
     }
