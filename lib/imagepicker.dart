@@ -23,6 +23,7 @@ class ImagePickState extends State<ImagePick> {
             style: ElevatedButton.styleFrom(
               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
             )),
+        SizedBox(height: 50),
         _img
       ],
     ));

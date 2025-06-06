@@ -1,3 +1,4 @@
+import 'package:calorie_tracker/Heading.dart';
 import 'package:calorie_tracker/home.dart';
 import 'package:flutter/material.dart';
 
@@ -22,8 +23,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           scaffoldBackgroundColor: const Color(primaryColor)),
       home: Scaffold(
-          appBar:
-              AppBar(title: Text(appName), backgroundColor: Color(primaryDark)),
+          appBar: AppBar(title: Heading(), backgroundColor: Color(primaryDark)),
           body: Center(child: Home())),
     );
   }

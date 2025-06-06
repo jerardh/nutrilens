@@ -11,6 +11,11 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [Text("Welcome"), ImagePick()]);
+    return Column(children: [
+      SizedBox(height: 40),
+      Text("Welcome"),
+      SizedBox(height: 10),
+      ImagePick()
+    ]);
   }
 }
