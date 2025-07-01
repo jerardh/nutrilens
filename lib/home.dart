@@ -1,3 +1,4 @@
+import 'package:calorie_tracker/datamanager.dart';
 import 'package:calorie_tracker/imagepicker.dart';
 import 'package:flutter/widgets.dart';
 
@@ -15,7 +16,9 @@ class HomeState extends State<Home> {
       SizedBox(height: 40),
       Text("Welcome"),
       SizedBox(height: 10),
-      ImagePick()
+      ImagePick(),
+      SizedBox(height: 10),
+      Datamanager()
     ]);
   }
 }
