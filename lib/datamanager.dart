@@ -24,7 +24,9 @@ class DatamanagerState extends State<Datamanager> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<String>(
-      future: readData(),
+      future:
+          readData(), //snapshot.data contains the result of the Future you passed to future:.
+      //It holds the value returned by the Future function once it completes successfully.
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Center(child: CircularProgressIndicator());
