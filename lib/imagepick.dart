@@ -17,10 +17,9 @@ class ImagePickState extends State<ImagePick> {
   @override
   Widget build(BuildContext context) {
     return (SizedBox(
-        width: 400,
-        height: 600,
+        height: 400,
+        width: double.infinity,
         child: Card(
-            margin: EdgeInsets.all(30),
             color: Colors.white,
             child: Column(
               children: [
@@ -30,8 +29,7 @@ class ImagePickState extends State<ImagePick> {
                     child: ElevatedButton(
                         onPressed: () => {getImage()}, child: Custombutton())),
                 SizedBox(height: 20),
-                _img,
-                SizedBox(height: 20)
+                _img
               ],
             ))));
   }
@@ -42,9 +40,9 @@ class ImagePickState extends State<ImagePick> {
     if (image != null) {
       setState(() {
         _img = Image.file(File(image.path),
-            width: 400,
+            width: 200,
             height:
-                400); //creating Image Object using path in XFile;Xfile-->File-->Image
+                200); //creating Image Object using path in XFile;Xfile-->File-->Image
         _hasImage = "True";
       });
     }

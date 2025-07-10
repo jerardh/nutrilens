@@ -15,8 +15,8 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   static const appName = "Calorie Tracker";
-  static const primaryColor = 0xFFCFFFDC;
-  static const primaryDark = 0xFF2E6F40;
+  static const primaryColor = Color.fromARGB(255, 152, 186, 146);
+  static const primaryDark = Color.fromARGB(255, 61, 77, 59);
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -26,11 +26,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(
-              seedColor: Color.fromARGB(255, 118, 230, 74)),
+              seedColor: Color.fromARGB(255, 129, 250, 82)),
           useMaterial3: true,
-          scaffoldBackgroundColor: const Color(primaryColor)),
+          scaffoldBackgroundColor: primaryColor),
       home: Scaffold(
-          appBar: AppBar(title: Heading(), backgroundColor: Color(primaryDark)),
+          appBar: AppBar(title: Heading(), backgroundColor: primaryDark),
           body: Center(child: Home())),
     );
   }

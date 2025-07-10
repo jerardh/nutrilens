@@ -5,13 +5,16 @@ import 'dart:io';
 class Custombutton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text("Choose an Image"),
-        IconButton(
-            onPressed: () => {}, icon: Icon(Icons.camera_alt), iconSize: 30)
-      ],
+    return SizedBox(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("Choose an Image"),
+          IconButton(
+              onPressed: () => {}, icon: Icon(Icons.camera_alt), iconSize: 30)
+        ],
+      ),
+      width: 200,
     );
   }
 }
