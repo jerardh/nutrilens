@@ -1,13 +1,14 @@
+import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'utils/AppText.dart';
 
 class Heading extends StatelessWidget {
   @override
-  String text = "Calorie Tracker";
   Widget build(BuildContext context) {
     return Text(
-      text,
-      style: TextStyle(color: Colors.white, fontSize: 20),
+      AppText.title,
+      style: TextStyle(color: AppColors.textPrimary, fontSize: AppText.primarySize),
     );
   }
 }

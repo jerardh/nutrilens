@@ -3,7 +3,7 @@ import 'package:calorie_tracker/home.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-
+import 'utils/AppColors.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -15,8 +15,6 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   static const appName = "Calorie Tracker";
-  static const primaryColor = Color.fromARGB(255, 152, 186, 146);
-  static const primaryDark = Color.fromARGB(255, 61, 77, 59);
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -28,9 +26,10 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
               seedColor: Color.fromARGB(255, 129, 250, 82)),
           useMaterial3: true,
-          scaffoldBackgroundColor: primaryColor),
+          scaffoldBackgroundColor: AppColors.background),
       home: Scaffold(
-          appBar: AppBar(title: Heading(), backgroundColor: primaryDark),
+        
+          appBar: AppBar(title: Heading(), backgroundColor: AppColors.primary),
           body: Center(child: Home())),
     );
   }

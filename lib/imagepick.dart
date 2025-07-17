@@ -1,4 +1,5 @@
 import 'package:calorie_tracker/customButton.dart';
+import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
@@ -16,22 +17,27 @@ class ImagePickState extends State<ImagePick> {
   String _hasImage = "False";
   @override
   Widget build(BuildContext context) {
-    return (SizedBox(
-        height: 400,
-        width: double.infinity,
-        child: Card(
-            color: Colors.white,
-            child: Column(
-              children: [
-                SizedBox(height: 20),
-                SizedBox(
-                    width: 200,
-                    child: ElevatedButton(
-                        onPressed: () => {getImage()}, child: Custombutton())),
-                SizedBox(height: 20),
-                _img
-              ],
-            ))));
+    return (Padding(
+        padding: EdgeInsets.all(30),
+        child: SizedBox(
+            height: 400,
+            width: double.infinity,
+            child: Card(
+                elevation: 3,
+                shadowColor: AppColors.textSecondary,
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    SizedBox(
+                        width: 200,
+                        child: ElevatedButton(
+                            onPressed: () => {getImage()},
+                            child: Custombutton())),
+                    SizedBox(height: 20),
+                    _img
+                  ],
+                )))));
   }
 
   void getImage() async {
