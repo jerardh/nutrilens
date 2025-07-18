@@ -13,9 +13,14 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
       SizedBox( child: Calorieinfo(),height: 200),
       picker.ImagePick()
-    ]);
+    ]),
+    );
   }
 }

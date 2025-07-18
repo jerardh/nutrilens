@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         
           appBar: AppBar(title: Heading(), backgroundColor: AppColors.primary),
-          body: Center(child: Home())),
+          body: Home()),
     );
   }
 }

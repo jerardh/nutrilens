@@ -1,3 +1,4 @@
+import 'package:calorie_tracker/ImageQuantity.dart';
 import 'package:calorie_tracker/customButton.dart';
 import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,8 @@ class ImagePickState extends State<ImagePick> {
                 shadowColor: AppColors.textSecondary,
                 color: Colors.white,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(height: 20),
                     SizedBox(
@@ -35,7 +38,9 @@ class ImagePickState extends State<ImagePick> {
                             onPressed: () => {getImage()},
                             child: Custombutton())),
                     SizedBox(height: 20),
-                    _img
+                    _img,
+                    SizedBox(height: 10),
+                    ImageQunatity()
                   ],
                 )))));
   }
