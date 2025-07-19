@@ -26,7 +26,7 @@ class ImageQuantityState extends State<ImageQunatity> {
                 onChanged: (double value) {
                   setState(() {
                     _quantity = value;
-                    _controller.text = (_quantity*1000).toStringAsFixed(2);
+                    _controller.text = (_quantity * 1000).toStringAsFixed(2);
                   });
                 },
               )),
@@ -36,7 +36,7 @@ class ImageQuantityState extends State<ImageQunatity> {
                   controller: _controller,
                   onChanged: (String value) {
                     setState(() {
-                      _quantity = double.parse(value)/1000;
+                      _quantity = double.parse(value) / 1000;
                     });
                   },
                   maxLength: 4,
