@@ -1,4 +1,4 @@
-# calorie_tracker
+# NutriLens
 
 Aims at identification of captured food item and display  it's calorie information
 
