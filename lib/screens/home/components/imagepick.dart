@@ -1,5 +1,6 @@
 import 'package:calorie_tracker/screens/home/components/ImageQuantity.dart';
 import 'package:calorie_tracker/screens/home/components/customButton.dart';
+import 'package:calorie_tracker/screens/home/components/uploadButton.dart';
 import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -21,14 +22,14 @@ class ImagePickState extends State<ImagePick> {
     return (Padding(
         padding: EdgeInsets.all(30),
         child: SizedBox(
-            height: 400,
+            height: 500,
             width: double.infinity,
             child: Card(
                 elevation: 3,
                 shadowColor: AppColors.textSecondary,
                 color: Colors.white,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(height: 20),
@@ -40,7 +41,8 @@ class ImagePickState extends State<ImagePick> {
                     SizedBox(height: 20),
                     _img,
                     SizedBox(height: 10),
-                    ImageQunatity()
+                    ImageQunatity(),
+                    UploadButton()
                   ],
                 )))));
   }
