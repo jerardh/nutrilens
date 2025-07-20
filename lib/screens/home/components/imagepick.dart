@@ -1,5 +1,5 @@
-import 'package:calorie_tracker/ImageQuantity.dart';
-import 'package:calorie_tracker/customButton.dart';
+import 'package:calorie_tracker/screens/home/components/ImageQuantity.dart';
+import 'package:calorie_tracker/screens/home/components/customButton.dart';
 import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
