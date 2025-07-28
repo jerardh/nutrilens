@@ -1,4 +1,3 @@
-import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
 
 class UploadButton extends StatelessWidget {

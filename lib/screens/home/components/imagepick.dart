@@ -3,7 +3,6 @@ import 'package:calorie_tracker/screens/home/components/customButton.dart';
 import 'package:calorie_tracker/screens/home/components/uploadButton.dart';
 import 'package:calorie_tracker/utils/AppColors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 

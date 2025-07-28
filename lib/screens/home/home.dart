@@ -1,5 +1,4 @@
 import 'package:calorie_tracker/screens/home/components/CalorieInfo.dart';
-import 'package:calorie_tracker/datamanager.dart';
 import 'package:calorie_tracker/screens/home/components/imagepick.dart' as picker;
 import 'package:flutter/widgets.dart';
 
